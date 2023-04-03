@@ -1,0 +1,214 @@
+@import "../../static/css/colors.sass";
+
+#header {
+	width: 100%;
+	padding: 16px 0 17.5px 0;
+	border-bottom: 1px solid $header-border-color;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 6.5px;
+
+	.userInfo {
+		display: flex;
+		align-items: center;
+
+		.star {
+			color: $star-color;
+			font-size: 25px;
+		}
+
+		.name {
+			color: $black-color;
+			font-size: 25px;
+			margin-left: 17px;
+		}
+	}
+
+	.btnOrder {
+		width: 200px;
+		height: 40px;
+		background: $header-button-bg;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		color: $header-button-color;
+		cursor: pointer;
+		transition: all 200ms;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+
+.summaryContent {
+	width: 100%;
+	height: 125px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 7px;
+
+	.firstItem {
+		width: 97px;
+		height: 100%;
+		background-color: $summary-data-bg-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		.userAvata {
+			width: 63px;
+			height: 72px;
+			color: $white-color;
+		}
+
+		.txt {
+			font-size: 10px;
+			color: $content-text-color;
+			margin-top: 12px;
+			text-transform: uppercase;
+		}
+	}
+
+	.secondItem {
+		width: 239px;
+		height: 100%;
+		background-color: $summary-data-bg-color;
+
+		.item {
+			display: flex;
+			align-items: center;
+			margin-top: 7px;
+
+			.icon {
+				height: 14px;
+				color: $summary-data-second-icon-color;
+
+				&.user {
+					width: 12px;
+					margin-left: 12px;
+				}
+
+				&.phone {
+					width: 9px;
+					margin-left: 14px;
+				}
+
+				&.address {
+					width: 12px;
+					margin-left: 12px;
+				}
+
+				&.home {
+					width: 16px;
+					margin-left: 10px;
+				}
+
+				&.email {
+					width: 14px;
+					margin-left: 11px;
+				}
+			}
+
+			.txt {
+				font-size: 12px;
+				color: $content-text-color;
+				margin-left: 12px;
+			}
+		}
+	}
+
+	.thirdItem {
+		width: 559px;
+		height: 100%;
+
+		.activeTxt {
+			width: 100%;
+			height: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 12px;
+			color: $content-text-color;
+			background-color: $summary-data-bg-color;
+		}
+
+		.stats {
+			width: 100%;
+			height: calc(100% - 30px);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.statsItem {
+				width: 185px;
+				height: 100%;
+				background-color: $summary-data-bg-color;
+
+				.total {
+					width: 100%;
+					height: calc(100% - 24px);
+					font-size: 50px;
+					color: $content-text-color;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: 600;
+				}
+
+				.statsIndex {
+					width: 100%;
+					height: 24px;
+					background-color: rgba(0, 0, 0, 0.1);
+					font-size: 10px;
+					color: $content-text-color;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+	.fourthItem {
+		width: 225px;
+		height: 100%;
+		background-color: $sms-status-background-in;
+
+		.status {
+			width: 100%;
+			height: calc(100% - 24px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			.txt1 {
+				font-size: 12px;
+				color: $content-text-color;
+			}
+
+			.txt2 {
+				font-size: 50px;
+				color: $content-text-color;
+				font-weight: 600;
+			}
+		}
+
+		.date {
+			width: 100%;
+			height: 24px;
+			background-color: rgba(0, 0, 0, 0.1);
+			font-size: 10px;
+			color: $content-text-color;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

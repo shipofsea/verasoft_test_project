@@ -1,0 +1,157 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+@import "colors.sass";
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: $white-color;
+	width: 100%;
+	height: 100%;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+		background-color: $white-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $color-gray;
+		border-radius: 10px;
+
+		&:hover {
+			background-color: $scrollbar-hover-color;
+		}
+	}
+}
+
+#root {
+	height: 100%;
+}
+
+.App {
+	width: 100%;
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+a:hover,
+a:focus,
+a:active {
+	outline: none;
+	text-decoration: none;
+}
+
+input:hover,
+input:focus,
+input:active {
+	outline: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.clearfix {
+	clear: both;
+	overflow: hidden;
+}
+
+.wrapper {
+	max-width: 1165px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	height: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	.spinnerTxt {
+		font-family: "Open Sans", sans-serif;
+		font-size: 32px;
+		color: $spinner-txt-color;
+		margin-top: 30px;
+	}
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	backdrop-filter: blur(6px) brightness(0.25);
+
+	.iconClose {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		padding: 30px 30px 0 0;
+
+		.close {
+			width: 35px;
+			height: 35px;
+			color: $white-color;
+			cursor: pointer;
+			transition: all 200ms;
+		}
+	}
+}
